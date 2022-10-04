@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="navbar">
+          <button class="show" onclick="asideToggle()">
+            <img src="Assets/icon/caret-right-solid.svg" alt="caret-right" />
+          </button>
+          <div class="search-box">
+            <div class="content">
+              <img src="Assets/icon/menu.svg" />
+              <span>Tòa nhà A</span>
+            </div>
+
+            <div class="group-icon-search">
+              <img src="Assets/icon/search.svg" alt="" />
+              <img src="Assets/icon/clear-24px.svg" alt="" />
+            </div>
+          </div>
+          <div class="picture">
+            <img src="Assets/images/Group 4175.svg" alt="Group 4175" />
+          </div>
+          <div class="box-info">
+            <div class="title">
+              <h1>Tòa nhà A</h1>
+              <span>Địa điểm</span>
+            </div>
+            <div class="group-btn-action">
+              <div class="box-btn">
+                <div class="group-icon-direction">
+                  <img src="Assets/icon/directions-24px.svg" alt="" />
+                </div>
+                <span> Chỉ đường </span>
+              </div>
+              <div class="box-btn">
+                <div class="group-icon">
+                  <img src="Assets/icon/Mask Group 68.svg" alt="" />
+                </div>
+                <span> Mã địa chỉ </span>
+              </div>
+              <div class="box-btn">
+                <div class="group-icon">
+                  <img src="Assets/icon/share-24px.svg" alt="" />
+                </div>
+                <span> Chia sẻ </span>
+              </div>
+            </div>
+            <div class="info-content">
+              <div class="box-items">
+                <img src="Assets/icon/Mask Group 54.svg" alt="" />
+                <span
+                  >63 Phan Đăng Lưu, Phường Thạch Thang, Quận Hải Châu, Thành
+                  phố Đà Nẵng</span
+                >
+              </div>
+              <div class="box-items">
+                <img src="Assets/icon/Mask Group 55.svg" alt="" />
+                <span><b>Ngày bắt đầu:</b> 24/11/2000</span>
+              </div>
+              <div class="box-items">
+                <img src="Assets/icon/Mask Group 55.svg" alt="" />
+                <span><b>Ngày kết thúc:</b> 29/11/2099</span>
+              </div>
+              <button>
+                <img src="Assets/icon/edit-24px.svg" alt="" />
+                Đề xuất chỉnh sửa
+              </button>
+            </div>
+          </div>
+          <div class="box-items-news">
+            <img src="Assets/images/Group 4175.svg" alt="" />
+            <div class="content">
+              <h1>
+                Công Ty Cổ Phần Đầu Tư Và Phát Triển Đô Thị Vạn Thịnh Phát
+              </h1>
+              <span
+                >Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành
+                phố Đà Nẵng, Việt Nam</span
+              >
+            </div>
+          </div>
+          <div class="box-items-news">
+            <img src="Assets/images/Group 4175.svg" alt="" />
+            <div class="content">
+              <h1>Nam Long Telecom Đà Nẵng</h1>
+              <span
+                >Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành
+                phố Đà Nẵng, Việt Nam</span
+              >
+            </div>
+          </div>
+          <div class="box-items-news">
+            <img src="Assets/images/Group 4175.svg" alt="" />
+            <div class="content">
+              <h1>Công ty A</h1>
+              <span
+                >Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành
+                phố Đà Nẵng, Việt Nam</span
+              >
+            </div>
+          </div>
+          <div class="box-items-news">
+            <img src="Assets/images/Group 4175.svg" alt="" />
+            <div class="content">
+              <h1>Công ty B</h1>
+              <span
+                >Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành
+                phố Đà Nẵng, Việt Nam</span
+              >
+            </div>
+          </div>
+          
+        </div>
+        <div
+          onmousemove="boxMove(event)"
+          onmouseout="clearBoxMove()"
+          class="wraper"
+        >
+          <div class="cursorsBox"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/cursorsBox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: normal normal 600 14px/19px Segoe UI;
+}
+
+
+section {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 2px #00000029;
+  height: 1080px;
+  display: flex;
+}
+section .wraper {
+  width: 100%;
+  height: 100%;
+  background-color: #508ff4;
+  box-sizing: border-box;
+  padding: 6px;
+}
+section .wraper .cursorsBox {
+  width: 300px;
+  height: 200px;
+  background: #e1e1e1 0% 0% no-repeat padding-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  pointer-events: none;
+
+  display: none;
+}
+.navbar button.show {
+  width: 20px;
+  height: 48px;
+  border: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 2px #00000029;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 444px;
+  top: 6px;
+  cursor: pointer;
+}
+.navbar button.show img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  transform: rotate(180deg);
+}
+.navbar {
+  width: 420px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  height: 1080px;
+  box-shadow: 0px 0px 2px #00000029;
+  display: flex;
+  visibility: visible;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(0);
+  transition: ease-out 0.3s;
+  position: fixed;
+}
+
+.navbar .search-box {
+  width: 408px;
+  height: 48px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 2px #00000029;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 4px 12px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0 0 0;
+}
+.navbar .search-box .content,
+.navbar .search-box .group-icon-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .search-box .content span {
+  text-align: left;
+
+  letter-spacing: 0px;
+  color: #0000008a;
+  margin-left: 24px;
+}
+
+.navbar .search-box .content img,
+.navbar .search-box .group-icon-search img {
+  cursor: pointer;
+}
+.navbar .search-box .group-icon-search img:first-child {
+  padding-right: 16px;
+  border-right: solid 1px #00000054;
+}
+.navbar .search-box .group-icon-search img:last-child {
+  margin: 0 12px 0 16px;
+}
+.navbar .picture {
+  width: 408px;
+  height: 240px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 6px 0px 6px;
+  border-radius: 4px 4px 0 0;
+}
+.navbar .box-info {
+  width: 408px;
+}
+.navbar .box-info .title {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px #00000029;
+  line-height: 8px;
+  text-align: left;
+  padding: 4px 16px 16px 16px;
+}
+.navbar .box-info .title h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin: 16px 0 14px 0;
+}
+.navbar .box-info .title span {
+  font: normal normal normal 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #0000008a;
+}
+.navbar .group-btn-action {
+  width: 408px;
+  height: 100px;
+  box-shadow: 0px 0px 2px #00000029;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar .group-btn-action .box-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .group-btn-action .box-btn .group-icon {
+  width: 36px;
+  height: 36px;
+  border: solid 1px #508ff4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .group-btn-action .box-btn span {
+  font: normal normal normal 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #508ff4;
+  margin-top: 4px;
+}
+.navbar .group-btn-action .box-btn .group-icon-direction {
+  width: 36px;
+  height: 36px;
+  background-color: #508ff4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .group-btn-action .group-icon {
+}
+.navbar .info-content {
+  width: 408px;
+  padding: 16px;
+  box-shadow: 0px 0px 2px #00000029;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.navbar .info-content .box-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.navbar .info-content .box-items img {
+  margin-right: 32px;
+}
+.navbar .info-content .box-items span {
+  color: #000000dd;
+  font: normal normal normal 14px/18px Segoe UI;
+}
+.navbar .info-content button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e4e4e4;
+  border-radius: 18px;
+  padding: 6px 16px;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+}
+.navbar .info-content button img {
+  margin-right: 8px;
+}
+.navbar .box-items-news {
+  width: 408px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 16px 16px;
+  box-shadow: 0px 0px 2px #00000029;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.navbar .box-items-news img {
+  width: 65px;
+  height: 65px;
+  margin-right: 13px;
+}
+.navbar .box-items-news .content {
+  text-align: left;
+}
+.navbar .box-items-news .content h1 {
+  font: normal normal 600 14px/18px Open Sans;
+  letter-spacing: 0px;
+  color: #000000de;
+  margin: 4px 0;
+}
+.navbar .box-items-news .content span {
+  font: normal normal normal 14px/18px Open Sans;
+  letter-spacing: 0px;
+  color: #000000de;
+}
+
+.show {
+  transform: translateX(-100%);
+  visibility: visible;
+}
+.rotate {
+  transform: rotate(0deg) !important;
+}
